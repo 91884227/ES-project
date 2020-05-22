@@ -4,7 +4,7 @@ get data from [here](http://www.websudoku.com/)
 ## Sudoku_crawer.py
 ### usage
 ```
-python Sudoku_crawer.py hardness howmany`
+python Sudoku_crawer.py hardness howmany
 ```
 
 | parameter | meaning | example |
