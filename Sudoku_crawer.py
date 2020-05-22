@@ -13,6 +13,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 import sys
+import time
 
 
 # In[59]:
@@ -47,6 +48,7 @@ class sudoku_crawer:
     
     def craw_all(self):
         for i in tqdm(range(self.howmuch_)):
+            time.sleep(0.5)
             self.craw_one()
 
 
