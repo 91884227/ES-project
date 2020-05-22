@@ -11,6 +11,7 @@ python Sudoku_crawer.py hardness howmany`
 | -------- | -------- | -------- |
 | hardness  |   難度 </br> 1:  Easy </br> 2: Medium</br> 3:  Hard </br> 4:  Evil | 1    |
 | howmany  |   要爬幾歌    | 10     |
+
 則會爬難度為hardness 的數獨 howmany 個。
 命名為 `hardness_0.npy`  ...  `hardness_howmany.npy`
 在data 的資料夾下
