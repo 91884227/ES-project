@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 import random
 import itertools
+import time
 from tqdm import tqdm
 
 
@@ -54,6 +55,7 @@ class Ret_GA:
         self.sol = None
         self.fitness_list = []
         self.final_iternation = 0
+        self.costtime = None
         
     def crossover(self):
         random.shuffle(self.Parent_list)
@@ -110,6 +112,7 @@ class Ret_GA:
             self.fitness_list = self.fitness_list + [max_value]
     
     def main(self):
+        tStart = time.time()
         for i in tqdm(range(1, self.Iteration+1)):
             if( i%self.resetpoint == 0):
                 print("reset at iteration %d" % i)
@@ -128,14 +131,14 @@ class Ret_GA:
             self.Solution_Found(self.print_fit)
 
             # third
-            self.Elitism()
-
+            self.Elitism()  
+        tEnd = time.time()
+        self.costtime = tEnd - tStart
         self.final_iternation = i
+        print("It cost %f sec" % (tEnd - tStart))
         if( i == self.Iteration):
             print("Solution Not Found")
         else:
             print("find solution")
             print("final iteration: %d" % i)
             print(self.sol)        
-    
-
