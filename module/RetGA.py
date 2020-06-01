@@ -87,7 +87,7 @@ class Ret_GA:
         # sort 
         all_instance.sort(key=dict(zip(all_instance, all_fit_value)).get, reverse = True)
         # update
-        self.Parent_list = all_instance 
+        self.Parent_list = all_instance[:90]
         
     def mutation(self):
         _ =  [i.mutation() for i in self.Parent_list]
