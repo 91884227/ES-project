@@ -116,7 +116,7 @@ class Ret_GA:
         for i in tqdm(range(1, self.Iteration+1)):
             if( i%self.resetpoint == 0):
                 print("reset at iteration %d" % i)
-                self.Parent_list = [Parent(Question_) for _ in range(10*9)]
+                self.Parent_list = [Parent(self.Question) for _ in range(10*9)]
             if( self.if_findsol):
                 break
 
