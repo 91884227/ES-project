@@ -21,10 +21,10 @@ python Solver_TJGA.py QUESTION_NAME PRINT_FIT ITERATION ID
 
 | name |  | 
 | -------- | -------- | 
-| `QUESTION_NAME_ID_RetGA.json`   | 儲存timecost 和 iteration  | 
-| `QUESTION_NAME.npy`   | 儲存solution  | 
+| `QUESTION_NAME_ID_RetGA.json`   | save timecost and  iteration  | 
+| `QUESTION_NAME.npy`   | save solution  | 
 
-### exmple
+### example
 ```
 python Solver_TJGA.py Perfect_1 1 50000 0001
 ```
@@ -32,8 +32,8 @@ python Solver_TJGA.py Perfect_1 1 50000 0001
 
 | name |  | 
 | -------- | -------- | 
-| `Perfect_1_0001_TJGA.json`   | 儲存timecost 和 iteration  | 
-| `Perfect_1.npy`   | 儲存solution  | 
+| `Perfect_1_0001_TJGA.json`   | save timecost and iteration  | 
+| `Perfect_1.npy`   | save solution  | 
 
 
 ## Solver_RetGA.py
@@ -53,10 +53,10 @@ python Solver_RetGA.py QUESTION_NAME PRINT_FIT ITERATION ID
 
 | name |  | 
 | -------- | -------- | 
-| `QUESTION_NAME_ID_RetGA.json`   | 儲存timecost 和 iteration  | 
-| `QUESTION_NAME.npy`   | 儲存solution  | 
+| `QUESTION_NAME_ID_RetGA.json`   | save timecost and iteration  | 
+| `QUESTION_NAME.npy`   | daave solution  | 
 
-### exmple
+### example
 ```
 python Solver_RetGA.py Perfect_1 1 50000 0001
 ```
@@ -87,7 +87,7 @@ python Sudoku_crawer.py hardness howmany
 命名為 `hardness_0.npy`  ...  `hardness_howmany.npy`
 放在`./data/` 
 
-### exmple
+### example
 ```
 python Sudoku_crawer.py 2 10
 ```
